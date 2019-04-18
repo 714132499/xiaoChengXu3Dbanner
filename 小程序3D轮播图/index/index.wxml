@@ -1,0 +1,6 @@
+<scroll-view scroll-x style="width:100%;white-space:nowrap">
+    <view wx:for="{{30}}" style="display:inline-block; margin:10rpx;border:1rpx solid red" data-id="{{index}}" bindtap="scroll">{{index}}</view>
+</scroll-view>
+<scroll-view scroll-y style='height:400rpx;' scroll-into-view="{{intoView}}" scroll-with-animation>
+    <view wx:for="{{30}}" id="view{{index}}" style="height:100rpx;margin:10rpx;border:1rpx solid blue">{{index}}</view>
+</scroll-view>
